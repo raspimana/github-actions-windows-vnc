@@ -23,7 +23,7 @@ jobs:
     - name: Install
       run: |
           powershell Invoke-WebRequest https://www.uvnc.eu/download/132/UltraVNC_1_3_2_X64_Setup.exe -OutFile ultravnc.exe
-          .\ultravnc.exe /VERYSILENT /LOADINF="windows.inf"
+          .\ultravnc.exe /LOADINF="windows.inf"
           
     - run: dir
 
