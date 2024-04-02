@@ -30,7 +30,7 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
 
     - name: Copy Configs and Start
-      run: del .\ultravnc\ultravnc.ini
+      #run: del .\ultravnc\ultravnc.ini
     - run: copy ultravnc.ini .\ultravnc\ultravnc.ini
 
     - run: .\ultravnc\winvnc.exe
