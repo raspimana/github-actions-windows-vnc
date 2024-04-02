@@ -31,7 +31,7 @@ jobs:
 
     - name: Copy Configs and Start
       #run: del .\ultravnc\ultravnc.ini
-    - run: copy ultravnc.ini .\ultravnc\ultravnc.ini
+      run: copy ultravnc.ini .\ultravnc\ultravnc.ini
 
     - run: .\ultravnc\winvnc.exe
 #    - run: sc start uvnc_service
